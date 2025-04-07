@@ -15,5 +15,9 @@ image2 = document.querySelectorAll("img")[1];
 image2.setAttribute("src", diceImagePath);
 
 if (randomNumber1 === randomNumber2){
-    
+    document.querySelector("header").innerHTML="Draw...";
+}else if (randomNumber1 > randomNumber2){
+    document.querySelector("header").innerHTML="Player One Wins!!!!";
+}else if (randomNumber2 > randomNumber1){
+    document.querySelector("header").innerHTML="Player Two Wins!!!!";
 }
